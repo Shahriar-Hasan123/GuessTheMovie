@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class TitleInput {
 
     public static String GameTittle() {
-        String[] str = new String[25];
+        String[] str = new String[100];
         int r=0,i;
      try {
          File fileText = new File("in.txt");
