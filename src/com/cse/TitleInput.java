@@ -8,15 +8,15 @@ public class TitleInput {
 
     public static String GameTittle() {
         String[] str = new String[25];
-        int r=0;
+        int r=0,i;
      try {
          File fileText = new File("in.txt");
          Scanner keyBoardInput = new Scanner(fileText);
-         for (int i = 0; i < 25; i++) {
+         for (i=0 ; keyBoardInput.hasNextLine(); i++) {
              str[i] = keyBoardInput.nextLine();
          }
          Random random = new Random();
-          r = random.nextInt(25);
+          r = random.nextInt(i);
 
      }catch (Exception e){
          System.out.println("NOT FOUND");
